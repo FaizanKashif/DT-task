@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DEEP THOUGHT</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+        <style>
+          .container{
+            max-width: 1200px;
+            margin: auto;
+            background-color: aliceblue;
+            overflow: auto;
+          }
+          .gallery{
+            margin: 5px;
+            border: 1px solid black;
+            float: left;
+            width: 390px;
+          }
+          .gallery img{
+            width: 100%;
+            height: auto;
+          }
+          .gallery p{
+            width: 100%;
+            height: auto;
+          }
+          .gallery textarea{
+            width: 100%;
+            height: auto;
+          }
+          
+          .gallery video{
+            width: 100%;
+            height: auto;
+          }
+        </style>
+    </head>
+
+    <body>
+      <!--navigation bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <img src="icon.jpeg" alt="pageicone" width="20" height="20">
+              <a class="navbar-brand" href="#">DEEP <strong style="color: blue;">THOUGHT</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-heart-fill"></i></a>
+                  </li>
+                  <li style="color: blue;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-heart-fill" viewBox="0 0 16 16">
+                    <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"/>
+                    <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"/>
+                    </svg>
+                  </li>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <li style="color: blue;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                      <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                    </svg>
+                  </li>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <li style="color: blue;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                      <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"/>
+                    </svg>
+                  </li>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <li style="color: blue;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    </svg>
+                  </li>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <li style="color: blue;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                  </li>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!--nav toggle-->
+          <div class="collapse" id="navbarToggleExternalContent" style="border: 1px solid black; width: 99%; height: 80px">
+            <div class="bg-dark p-4">
+              <h5 class="text-white h4">Journey Board</h5>
+              <ul style="background-color: white;">
+                <li><a href="Asset Heading 1">Asset Heading 1</a></li>
+                <li><a href="Asset Heading 2">Asset Heading 2</a></li>
+                <li><a href="Asset Heading 3">Asset Heading 3</a></li>
+                <li><a href="Asset Heading 4">Asset Heading 4</a></li>
+                <li><a href="Asset Heading 5">Asset Heading 5</a></li>
+                <li><a href="Asset Heading 5">Asset Heading 6</a></li>
+              </ul>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+              </button>
+            </div>
+          </nav>
+
+          <!--Main Body-->
+          <div style="border: 150px;">
+            <h2 style="background-color: blue;">My new project</h2>
+          </div>
+          <div class="heading">
+             <H1><center>Applicat's storyboard feature</center></H1>
+          </div>
+          
+          <div class="Main" style="border: 150px;">
+
+            <!--first lane-->
+            <div class="container">
+            <div class="gallery">
+              <h3 style="background-color: black; color: white">Asset Heading 1</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi debitis odit atque accusamus consequatur corporis, eaque at itaque nesciunt consequuntur sit et rem quam ipsum voluptate quo iure maxime officia.</p>
+            </div> 
+            <div class="gallery">
+              <h3 style="background-color: black; color: white">Asset Heading 2</h3>
+              <textarea rows="6" cols="8" placeholder="as per the guidence"></textarea> 
+            </div>
+            </div>
+
+            <!--second lane-->
+            <div class="container">
+            <div class="gallery">
+              <h3 style="background-color: black; color: white">Asset Heading 3</h3>
+              <img src="wigi.png">
+            </div>
+            <div class="gallery">
+              <h3 style="background-color: black; color: white">Asset Heading 4</h3>
+              <img src="intern.jpeg">
+            </div>
+            </div>
+
+            <!--third lane-->
+            <div class="container">
+            <div class="gallery">
+              <h3 style="background-color: black; color: white">Asset Heading 5</h3>
+              <audio controls style="background-color: black;">
+                <source src="bounce.mp3" type="Audio/Mpeg">
+              </audio>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam, placeat inventore quos veniam dignissimos iusto eaque quam a fuga harum porro adipisci architecto omnis quidem neque? Porro, temporibus iure.</p>
+            </div>
+            <div class="gallery">
+              <h3 style="background-color: black; color: white">Asset Heading 6</h3>
+              <video controls>
+                <source src="video.mp4" type="video/mp4">
+              </video>
+            </div>
+            </div>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
